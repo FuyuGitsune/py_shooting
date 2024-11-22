@@ -1,5 +1,6 @@
 import pygame
 import sys
+import font
 
 SURFACE_WIDTH = 800 #画面幅
 SURFACE_HEIGHT = 600 #画面高さ
@@ -16,6 +17,8 @@ def main():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
+
+        surface.blit(font.r_font("Hello! World", 25, 255255255), [50, 50])
         
 
         pygame.display.update()
